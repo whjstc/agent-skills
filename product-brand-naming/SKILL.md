@@ -1,17 +1,34 @@
 ---
 name: product-brand-naming
-description: Product, startup, SaaS, AI app, API, devtool, and digital-product naming workflow for generating, screening, and ranking brand names. Use this whenever the user asks to name or rename a product or company, choose a domain, validate brand-name candidates, compare product names, check domain availability, do obvious same-name search, or perform preliminary trademark/conflict screening before launch.
+description: Product, startup, SaaS, AI app, API, devtool, and digital-product naming workflow for market-informed brand naming. Use this whenever the user asks to name or rename a product or company, choose a domain, validate brand-name candidates, compare product names, check domain availability, research competitor naming patterns, do obvious same-name search, or perform preliminary trademark/conflict screening before launch.
 ---
 
 # Product Brand Naming
 
 ## Overview
 
-Use this skill to create commercially usable brand-name shortlists for SaaS products, AI apps, API products, devtools, marketplaces, content products, and other digital businesses. The workflow is repeatable: clarify positioning, generate candidates, screen obvious conflicts, check domains, flag trademark risk, and return a ranked decision table.
+Use this skill to create commercially usable brand-name shortlists for SaaS products, AI apps, API products, devtools, marketplaces, content products, and other digital businesses. The workflow is repeatable: scan the market, clarify positioning, generate candidates, screen obvious conflicts, check domains, flag trademark risk, and return a ranked decision table.
 
 This skill is for product and brand planning, not legal advice. Trademark findings are preliminary risk signals only; recommend counsel review before public launch, Stripe setup, OAuth app verification, legal pages, or paid acquisition.
 
 ## Workflow
+
+### 0. Scan the market landscape
+
+Read `references/market-scan.md` before generating names when the task involves a real product category, launch decision, or domain purchase.
+
+If browsing is available, search current competitors and adjacent products first. If browsing is unavailable, use known competitors plus any user-provided examples and clearly label the scan as limited.
+
+Capture:
+
+- Competitors and adjacent products
+- Their names, domains, taglines, and categories
+- Naming patterns used in the category
+- Overcrowded words and weakly differentiated patterns
+- Risk words that imply certification, legal certainty, regulated status, or guarantees
+- Naming whitespace: credible directions that are still underused
+
+Use the scan to shape candidate generation. Do not copy competitor names, imitate distinctive coined names too closely, or recommend a name only because the domain appears available.
 
 ### 1. Build the naming brief
 
@@ -95,11 +112,13 @@ Score each finalist on:
 Return:
 
 1. Naming brief summary
-2. Top 5-10 ranked candidates
-3. Domain status table
-4. Conflict/trademark-risk notes
-5. Recommendation and backup option
-6. Next actions before adopting the name
+2. Market naming scan summary
+3. Naming pattern takeaways and whitespace
+4. Top 5-10 ranked candidates
+5. Domain status table
+6. Conflict/trademark-risk notes
+7. Recommendation and backup option
+8. Next actions before adopting the name
 
 Use direct risk language:
 

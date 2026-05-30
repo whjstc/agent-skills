@@ -19,6 +19,7 @@ npx skills add whjstc/agent-skills --skill product-brand-naming
 Use it for:
 
 - Naming or renaming a product
+- Researching competitor naming patterns before ideation
 - Checking domain availability with RDAP/WHOIS
 - Screening obvious same-name brand conflicts
 - Preparing a preliminary trademark-risk shortlist
