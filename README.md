@@ -1,5 +1,7 @@
 # Agent Skills
 
+[![skills.sh](https://skills.sh/b/whjstc/agent-skills)](https://skills.sh/whjstc/agent-skills)
+
 Reusable agent skills for Codex, Claude Code, and compatible AI agents.
 
 ## Skills
