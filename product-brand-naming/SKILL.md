@@ -7,7 +7,7 @@ description: Product, startup, SaaS, AI app, API, devtool, and digital-product n
 
 ## Overview
 
-Use this skill to create commercially usable brand-name shortlists for SaaS products, AI apps, API products, devtools, marketplaces, content products, and other digital businesses. The workflow is repeatable: scan the market, clarify positioning, generate candidates, screen obvious conflicts, check domains, flag trademark risk, and return a ranked decision table.
+Use this skill to create commercially usable brand-name shortlists for SaaS products, AI apps, API products, devtools, marketplaces, content products, and other digital businesses. The workflow is repeatable: scan the market, clarify positioning, ask the user to choose a naming direction, generate candidates, screen obvious conflicts, check domains, flag trademark risk, and return a ranked decision table.
 
 This skill is for product and brand planning, not legal advice. Trademark findings are preliminary risk signals only; recommend counsel review before public launch, Stripe setup, OAuth app verification, legal pages, or paid acquisition.
 
@@ -45,7 +45,33 @@ Capture:
 - Preferred TLDs and launch markets
 - Competitors and adjacent categories
 
-### 2. Generate candidates in lanes
+### 2. Ask for a naming direction
+
+After the market scan and brief, present 4-6 naming directions and ask the user to choose before generating the full candidate set.
+
+Use a compact table:
+
+| Option | Direction | Best For | Tradeoff | Example Shape |
+| --- | --- | --- | --- | --- |
+
+Common directions:
+
+- Clear/descriptive: low explanation cost, stronger SEO/category signal
+- Technical/audit: credible for technical buyers, may feel colder
+- Trust/privacy-led: reassuring for business buyers, may blend into privacy-platform language
+- Detection/visibility: strong for monitoring, evidence, and diagnostics products
+- Coined/brandable: more ownable and easier to trademark, higher explanation cost
+- Metaphorical: memorable and flexible, needs stronger tagline support
+
+Question format:
+
+> Which naming direction should I prioritize? Pick one or two. If you want speed, I can choose the best mix based on the market scan.
+
+If the user has explicitly asked to proceed without questions or says "you decide", select 2-3 directions yourself and state the selection before generating names. Otherwise, stop and wait for the user's answer.
+
+When the user chooses, allocate roughly 70% of generated candidates to the selected direction(s) and 30% to adjacent exploratory directions so the shortlist does not become too narrow.
+
+### 3. Generate candidates in lanes
 
 Generate 25-60 candidates before screening. Use several lanes so the list does not collapse into one naming pattern:
 
@@ -62,7 +88,7 @@ Avoid names that:
 - Are hard to say, spell, or hear over a call
 - Depend on punctuation, unusual capitalization, or exact stylization to make sense
 
-### 3. Screen domains
+### 4. Screen domains
 
 Use `scripts/check-domains.mjs` for the first pass:
 
@@ -78,7 +104,7 @@ Interpret results conservatively:
 
 Prefer `.com` for the primary brand if feasible. Treat `.io`, `.app`, or category TLDs as acceptable fallbacks only if the user understands the tradeoff.
 
-### 4. Screen obvious conflicts
+### 5. Screen obvious conflicts
 
 For finalists, run exact-match searches and adjacent-category searches:
 
@@ -92,7 +118,7 @@ For finalists, run exact-match searches and adjacent-category searches:
 
 If available and relevant, check USPTO, WIPO Global Brand Database, EUIPO, Companies House, GitHub, npm, X, LinkedIn, Product Hunt, and app marketplaces.
 
-### 5. Score and shortlist
+### 6. Score and shortlist
 
 Read `references/scorecard.md` when producing a ranked table or making a recommendation.
 
@@ -107,18 +133,19 @@ Score each finalist on:
 - Roadmap fit
 - Claim-safety
 
-### 6. Output format
+### 7. Output format
 
 Return:
 
 1. Naming brief summary
 2. Market naming scan summary
 3. Naming pattern takeaways and whitespace
-4. Top 5-10 ranked candidates
-5. Domain status table
-6. Conflict/trademark-risk notes
-7. Recommendation and backup option
-8. Next actions before adopting the name
+4. User-selected naming direction or agent-selected direction with rationale
+5. Top 5-10 ranked candidates
+6. Domain status table
+7. Conflict/trademark-risk notes
+8. Recommendation and backup option
+9. Next actions before adopting the name
 
 Use direct risk language:
 

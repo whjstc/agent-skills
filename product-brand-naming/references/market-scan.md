@@ -42,6 +42,33 @@ After grouping, identify:
 - Underused credible angles: terms that fit the buyer and product but are not saturated
 - Roadmap-safe terms: words broad enough for the next 2-3 likely product extensions
 
+## Naming Direction Gate
+
+After the scan, convert patterns into user-facing direction choices before generating the final list. The goal is taste calibration: users should choose the kind of name they want, not react to a random pile of candidates.
+
+Offer 4-6 options tailored to the category:
+
+| Option | Direction | Description | Good Fit | Tradeoff |
+| --- | --- | --- | --- | --- |
+| A | Clear/descriptive | Category and job are obvious | Self-serve products, SEO, low-trust markets | Less distinctive |
+| B | Technical/audit | Feels rigorous, diagnostic, evidence-based | Devtools, audit products, technical buyers | Can feel cold |
+| C | Trust/privacy-led | Signals safety, accountability, governance | Compliance-adjacent products, business buyers | Crowded in privacy/security |
+| D | Detection/visibility | Emphasizes seeing hidden behavior | Monitoring, analytics, runtime inspection | May sound like a feature |
+| E | Coined/brandable | Ownable, compact, trademark-friendly | Long-term brand building | Needs explanation |
+| F | Metaphorical | Memorable image or concept | Differentiated positioning | Needs strong tagline |
+
+Ask one question:
+
+> Which naming direction should I prioritize? Pick one or two. If you want speed, I can choose the best mix based on the market scan.
+
+If the user delegates the decision, choose the best 2-3 directions based on:
+
+- Buyer sophistication
+- Market crowdedness
+- Need for immediate comprehension
+- Domain availability pressure
+- Legal/claim-risk constraints
+
 ## Naming Guidance
 
 Use market evidence to constrain candidate generation:
