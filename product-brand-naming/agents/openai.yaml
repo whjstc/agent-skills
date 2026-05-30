@@ -1,0 +1,3 @@
+display_name: Product Brand Naming
+short_description: Name and screen product brands.
+default_prompt: Help me name a digital product. Build a naming brief, generate candidates, check domains and obvious conflicts, then return a ranked shortlist.
